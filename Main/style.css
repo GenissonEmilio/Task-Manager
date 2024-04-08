@@ -3,7 +3,7 @@ body {
   font: normal 15pt Arial;
 }
 .mainScreen {
-  background: white;
+  background: slategray;
   border-radius: 10px;
   padding: 15px;
   width: 350px;
@@ -16,7 +16,7 @@ header {
   text-align: center;
 }
 .Tasks {
-  background: darkblue;
+  background: white;
   border-radius: 10px;
   padding: 15px;
   width: 250px;
@@ -26,4 +26,10 @@ header {
 }
 .MainButton {
   text-align: center;
+}
+.Weekday {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
 }
