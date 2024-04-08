@@ -1,0 +1,29 @@
+body {
+  background: rgb(70, 142, 236);
+  font: normal 15pt Arial;
+}
+.mainScreen {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 350px;
+  height: 800px;
+  margin: auto;
+  box-shadow: 4px 4px 10px rgb(0,0,0,0,366);
+}
+header {
+  color: white;
+  text-align: center;
+}
+.Tasks {
+  background: darkblue;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  height: 500px;
+  margin: auto;
+  box-shadow: 4px 4px 10px rgb(0,0,0,0,366);
+}
+.MainButton {
+  text-align: center;
+}
