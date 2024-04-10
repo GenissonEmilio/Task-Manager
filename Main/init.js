@@ -1,7 +1,7 @@
 (function () {
   //Start the functionalites
   const functionality = new Functionality({
-    element: document.querySelector('.mainScreen')
+    screen: document.querySelector('.mainScreen')
   });
   
   //Add a new Task
