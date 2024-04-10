@@ -2,7 +2,9 @@ body {
   background: rgb(70, 142, 236);
   font: normal 15pt Arial;
 }
+
 .mainScreen {
+  position: fixed;
   background: slategray;
   border-radius: 10px;
   padding: 15px;
@@ -15,6 +17,7 @@ header {
   color: white;
   text-align: center;
 }
+
 .Tasks {
   background: white;
   border-radius: 10px;
@@ -24,12 +27,43 @@ header {
   margin: auto;
   box-shadow: 4px 4px 10px rgb(0,0,0,0,366);
 }
-.MainButton {
-  text-align: center;
+.MainTask {
+  background: #505FFF;
+  color: black;
+  border-radius: 15px;
+  height: 70px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  box-shadow: 3px 3px 10px rgb(0,0,0,0,366);
 }
+
 .Weekday {
   background: white;
   color: black;
   border-radius: 10px;
   padding: 15px;
+  margin-bottom: 10px;
+}
+
+.taskPercentage {
+  text-align: center;
+  background: pink;
+  border-radius: 50%;
+}
+
+.MainButton {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.MainButton button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 40px;
 }
