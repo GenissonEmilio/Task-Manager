@@ -1,17 +1,19 @@
 class Functionality {
-  constructor(config) {
-    this.screen = config.screen;
+  constructor({ button, modal, span}) {
+    this.button = button;
+    this.modal = modal;
+    this.span = span;
   }
   
   addTask() {
-    alert()
+    
   }
   
   addWedgets() {
-    alert()
+    
   }
   
   seeTasks() {
-    alert()
+    
   }
 }
