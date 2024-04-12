@@ -1,22 +1,41 @@
 (function () {
-  //Start the functionalites
-  const functionality = new Functionality({
-    screen: document.querySelector('.mainScreen')
+  //select modal, close span and functionality
+  let modal = document.getElementById('mymodal');
+  let span = document.getElementsByClassName('close')[0];
+  let mbt = document.querySelectorAll('.mbut');
+  
+  //Open and close the model
+  mbt.forEach(button => {
+    button.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+  });
+  span.addEventListener('click', () => {
+    modal.style.display = 'none';
   });
   
   //Add a new Task
-  document.querySelector('#addTask').addEventListener('click', () => {
+  document.querySelector('#addTask').addEventListener('click', bu => {
+    const functionality = new Functionality({
+      button: bu
+    });
     functionality.addTask();
-  })
+  });
   
   //Add new Widgets
-  document.querySelector('#widgets').addEventListener('click', () => {
+  document.querySelector('#widgets').addEventListener('click', bu => {
+    const functionality = new Functionality({
+      button: bu
+    });
     functionality.addWedgets();
-  })
+  });
   
   //See all Tasks
-  document.querySelector('#allTasks').addEventListener('click', () => {
+  document.querySelector('#allTasks').addEventListener('click', bu => {
+    const functionality = new Functionality({
+      button: bu,
+    });
     functionality.seeTasks();
-  })
+  });
   
 })()

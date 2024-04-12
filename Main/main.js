@@ -1,17 +1,17 @@
 class Functionality {
-  constructor(config) {
-    this.screen = config.screen;
+  constructor({ button}) {
+    this.button = button.button;
   }
   
   addTask() {
-    alert()
+    
   }
   
   addWedgets() {
-    alert()
+    
   }
   
   seeTasks() {
-    alert()
+    
   }
 }
