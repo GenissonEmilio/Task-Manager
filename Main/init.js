@@ -17,9 +17,7 @@
   //Add a new Task
   document.querySelector('#addTask').addEventListener('click', bu => {
     const functionality = new Functionality({
-      button: bu,
-      modal: modal,
-      span: span
+      button: bu
     });
     functionality.addTask();
   });
@@ -27,9 +25,7 @@
   //Add new Widgets
   document.querySelector('#widgets').addEventListener('click', bu => {
     const functionality = new Functionality({
-      button: bu,
-      modal: modal,
-      span: span
+      button: bu
     });
     functionality.addWedgets();
   });
@@ -38,8 +34,6 @@
   document.querySelector('#allTasks').addEventListener('click', bu => {
     const functionality = new Functionality({
       button: bu,
-      modal: modal,
-      span: span
     });
     functionality.seeTasks();
   });
