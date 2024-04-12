@@ -1,40 +1,40 @@
 (function () {
-  //select modal, close span and functionality
-  let modal = document.getElementById('mymodal');
-  let span = document.getElementsByClassName('close')[0];
-  let mbt = document.querySelectorAll('.mbut');
+  //concertar bug, adição de tarefa apenas quando o botão de adicionar tarefa for clicado
   
-  //Open and close the model
-  mbt.forEach(button => {
+  //Select model and close span
+  modal = document.getElementById('modal');
+  close = document.getElementsByClassName('close')[0];
+  
+  //Start functionality
+  const functionality = new Functionality();
+  
+  //Open and close the modal
+  document.querySelectorAll('.mbut').forEach(button => {
     button.addEventListener('click', () => {
-    modal.style.display = 'block';
+      modal.style.display = 'block'; 
+    });
   });
-  });
-  span.addEventListener('click', () => {
+  close.addEventListener('click', () => {
     modal.style.display = 'none';
   });
+  window.onclick = (event) => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
   
   //Add a new Task
-  document.querySelector('#addTask').addEventListener('click', bu => {
-    const functionality = new Functionality({
-      button: bu
-    });
+  document.querySelector('#addTask').addEventListener('click', () => {
     functionality.addTask();
   });
   
   //Add new Widgets
-  document.querySelector('#widgets').addEventListener('click', bu => {
-    const functionality = new Functionality({
-      button: bu
-    });
+  document.querySelector('#widgets').addEventListener('click', () => {
     functionality.addWedgets();
   });
   
   //See all Tasks
-  document.querySelector('#allTasks').addEventListener('click', bu => {
-    const functionality = new Functionality({
-      button: bu,
-    });
+  document.querySelector('#allTasks').addEventListener('click', () => {
     functionality.seeTasks();
   });
   
