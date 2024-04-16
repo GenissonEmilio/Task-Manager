@@ -13,7 +13,7 @@ body {
   box-shadow: 4px 4px 10px rgb(0,0,0,0,366);
 }
 
-img {
+#back {
   position: absolute;
   background: red;
   border-radius: 50%;
@@ -24,6 +24,37 @@ img {
   transform: translateX(-50%);
 }
 
-#taskName {
-  background: #0B0F3B;
+#add {
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  left: 300px;
+  transform: translateX(-50%);
+}
+
+.task {
+  margin-bottom: 10px;
+}
+.task-name {
+  position: absolute;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.task-divider {
+  border-bottom: 1px solid pink;
+  position: absolute;
+  width: calc(100% - 100px);
+  left: 5px;
+  top: 20px;
+}
+
+.hidden {
+  display: none;
 }
