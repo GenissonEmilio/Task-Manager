@@ -4,6 +4,7 @@
   
   //Add a new Task
   document.querySelector('#addTask').addEventListener('click', () => {
+    window.location.href = 'addTask.html'
     functionality.addTask();
   });
   

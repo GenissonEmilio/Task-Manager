@@ -24,9 +24,10 @@ body {
   transform: translateX(-50%);
 }
 
-#add {
+.add {
   position: absolute;
   background: red;
+  text-align: center;
   border-radius: 50%;
   width: 60px;
   height: 60px;

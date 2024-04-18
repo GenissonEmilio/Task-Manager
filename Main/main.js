@@ -4,11 +4,13 @@ class Functionality {
   }
   
   addTask() {
-    window.location.href = 'addTask.html'
+  
   }
   
-  addWedgets() {
-    
+  async addWedgets() {
+    const t = await new Ka()
+    let x = t.ob();
+    console.log(x.taskName)
   }
   
   seeTasks() {

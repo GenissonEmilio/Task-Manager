@@ -1,38 +1,26 @@
-let input = document.querySelector('.task-name')
-const key = 'taks'
-const add = document.querySelector('.add')
-
-input.addEventListener('click', () => {
-  input.value = ' ';
-});
-
-add.addEventListener('click', () => {
-  console.log(input.value)
-  saveName(input.value);
-})
+input = document.querySelector('.task-name');
+add = document.querySelector('.add');
+key = 'task';
 
 function saveName(name) {
-  window.localStorage.setItem(key, JSON.stringify({
-    name: name
+  window.localStorage.setItem(this.key, JSON.stringify({
+    taskName: name
   }));
 }
 
+//Delete the text
+input.addEventListener('click', () => {
+    input.value = ' '
+  });
+    
+//Save task name
+add.addEventListener('click', () => {
+  console.log(input.value)
+  saveName(input.value)
+});
 
-/*save() {
-    window.localStorage.setItem(this.saveFileKey, JSON.stringify({
-      mapId: this.mapId,
-      startingHeroX: this.startingHeroX,
-      startingHeroY: this.startingHeroX,
-      startingHeroDirection: this.startingHeroDirection,
-      playerState: {
-        pizzas: playerState.pizzas,
-        lineup: playerState.lineup,
-        items: playerState.items,
-        storyFlags: playerState.storyFlags
-      }
-    }));
-  }
-  
+
+/*
   getSaveFile() {
     const file = window.localStorage.getItem(this.saveFileKey);
     return file ? JSON.parse(file) : null
