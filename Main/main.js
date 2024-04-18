@@ -4,7 +4,7 @@ class Functionality {
   }
   
   addTask() {
-    
+    window.location.href = 'addTask.html'
   }
   
   addWedgets() {

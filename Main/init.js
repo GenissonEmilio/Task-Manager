@@ -1,5 +1,7 @@
 (function () {
-  const functionality = new Functionality()
+  //Start functionality
+  const functionality = new Functionality();
+  
   //Add a new Task
   document.querySelector('#addTask').addEventListener('click', () => {
     functionality.addTask();

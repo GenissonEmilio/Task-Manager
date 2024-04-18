@@ -7,6 +7,7 @@ input.addEventListener('click', () => {
 });
 
 add.addEventListener('click', () => {
+  console.log(input.value)
   saveName(input.value);
 })
 
