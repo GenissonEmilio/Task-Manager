@@ -4,7 +4,7 @@ class Functionality {
   }
   
   addTask() {
-    
+  
   }
   
   addWedgets() {
