@@ -7,10 +7,8 @@ class Functionality {
   
   }
   
-  async addWedgets() {
-    const t = await new Ka()
-    let x = t.ob();
-    console.log(x.taskName)
+  addWedgets() {
+    
   }
   
   seeTasks() {

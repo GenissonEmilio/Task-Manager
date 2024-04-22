@@ -1,10 +1,10 @@
-input = document.querySelector('.task-name');
-add = document.querySelector('.add');
-key = 'task';
+let input = document.querySelector('.task-name');
+const add = document.querySelector('.add');
+const key = 'task';
 
 function saveName(name) {
-  window.localStorage.setItem(this.key, JSON.stringify({
-    taskName: name
+  window.localStorage.setItem(key, JSON.stringify({
+    name: name
   }));
 }
 
@@ -15,26 +15,5 @@ input.addEventListener('click', () => {
     
 //Save task name
 add.addEventListener('click', () => {
-  console.log(input.value)
-  saveName(input.value)
+  saveName(input.value);
 });
-
-
-/*
-  getSaveFile() {
-    const file = window.localStorage.getItem(this.saveFileKey);
-    return file ? JSON.parse(file) : null
-  }
-  
-  load() {
-    const file = this.getSaveFile();
-    if (file) {
-      this.mapId = file.mapId;
-      this.startingHeroX = file.startingHeroX;
-      this.startingHeroY = file.startingHeroY;
-      this.startingHeroDirection = file.startingHeroDirection;
-      Object.keys(file.playerState).forEach(key => {
-        playerState[key] = file.playerState[key];
-      })
-    }
-  }*/

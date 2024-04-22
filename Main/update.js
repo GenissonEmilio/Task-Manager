@@ -1,11 +1,7 @@
-class Ka {
-  constructor() {
-    
-  }
-  
-  async ob() {
-    const name = await window.localStorage.getItem('task');
-    return name ? JSON.parse(name) : null
-  }
-  
-}
+//Select Task name
+let nameJson = window.localStorage.getItem('task');
+let name = nameJson ? JSON.parse(nameJson) : null;
+
+//Select Taskname in MainScreen
+let taskName = document.querySelector('.taskName')
+taskName.innerHTML += name.name
