@@ -4,7 +4,7 @@ const key = 'task';
 
 function saveName(name) {
   window.localStorage.setItem(key, JSON.stringify({
-    name: name
+    mainTask: name
   }));
 }
 
@@ -12,8 +12,16 @@ function saveName(name) {
 input.addEventListener('click', () => {
     input.value = ' '
   });
-    
-//Save task name
-add.addEventListener('click', () => {
-  saveName(input.value);
-});
+
+//Add all task
+
+
+//Chek markup and add MainTask
+function checkMarked() {
+  let isCheked = document.getElementById('likeMainTask').checked;
+  if (isCheked) {
+    add.addEventListener('click', () => {
+      saveName(input.value);
+    });
+  }
+}

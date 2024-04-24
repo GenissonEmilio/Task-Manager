@@ -4,11 +4,11 @@ class Functionality {
   }
   
   addTask() {
-    window.location.href = 'addTask.html'
+    window.location.href = 'taskAdd/addTask.html'
   }
   
   addWedgets() {
-    
+    //Função obselta, mudar depois
   }
   
   seeTasks() {
