@@ -1,5 +1,5 @@
 //Select Task name
-let nameJson = window.localStorage.getItem('task');
+let nameJson = window.localStorage.getItem('mainTask');
 let name = nameJson ? JSON.parse(nameJson) : null;
 
 //Select Taskname in MainScreen and add a MainTask

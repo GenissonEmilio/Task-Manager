@@ -9,7 +9,7 @@
   
   //Add new Widgets
   document.querySelector('#widgets').addEventListener('click', () => {
-    functionality.addWedgets();
+    
   });
   
   //See all Tasks
