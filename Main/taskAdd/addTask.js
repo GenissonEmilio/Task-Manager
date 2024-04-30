@@ -1,12 +1,7 @@
 let input = document.querySelector('.task-name');
 const add = document.querySelector('.add');
-const key = 'task';
-
-function saveName(name) {
-  window.localStorage.setItem(key, JSON.stringify({
-    mainTask: name
-  }));
-}
+const key = 'allTask';
+const functionality = new Functionality();
 
 //Delete the text
 input.addEventListener('click', () => {
@@ -21,7 +16,9 @@ function checkMarked() {
   let isCheked = document.getElementById('likeMainTask').checked;
   if (isCheked) {
     add.addEventListener('click', () => {
-      saveName(input.value);
+      window.localStorage.setItem('mainTask', JSON.stringify({
+        mainTask: name
+      }));
     });
   }
 }

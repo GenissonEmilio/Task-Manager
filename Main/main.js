@@ -4,11 +4,12 @@ class Functionality {
   }
   
   addTask() {
-    window.location.href = 'taskAdd/addTask.html'
+    window.location.href = 'taskAdd/addTask.html';
   }
   
-  addWedgets() {
-    //Função obselta, mudar depois
+  takAllTask() {
+    const allTask = window.localStorage.getItem('allTask');
+    return allTask ? JSON.parse(allTask) : null
   }
   
   seeTasks() {
